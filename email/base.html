@@ -1,0 +1,36 @@
+<!-- Main HTML Template for Email Builder Application -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+    <title>Email Builder</title>    
+</head>
+<body>
+    <div class="container">
+        <h1>Email Template Builder</h1>
+        <form id="emailForm">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter Title">
+            </div>
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea id="content" name="content" rows="5" placeholder="Enter Content"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="footer">Footer</label>
+                <input type="text" id="footer" name="footer" placeholder="Enter Footer">
+            </div>
+            <div class="form-group">
+                <label for="image">Upload Image</label>
+                <input type="file" id="image" name="image">
+            </div>
+            <button type="button" onclick="submitTemplate()">Submit Template</button>
+        </form>
+        <div id="preview" style="margin-top: 30px;"></div>
+    </div>
+</body>
+</html>
